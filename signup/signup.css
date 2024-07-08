@@ -1,0 +1,199 @@
+/* CSS BUAT LOGIN */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.right-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left-side {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #7139dc;
+    color: #fff;
+    background-image: url('../assets/pattern1.svg');
+    background-size: cover;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right-side p {
+    font-size: 1rem;
+    color: #656565;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.left-side p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0f3f4;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    color: #656565;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #656565;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 45px;
+    background: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 45px;
+    background-color: #6231bf;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.disable{
+    display: none;
+}
+
+.disable a{
+    color: #06080E;
+    font-weight: 500;
+    text-decoration: none;;
+}
+
+.disable a:hover{
+    color: #5126a5;
+}
+
+@media screen and (max-width : 992px) {
+    .left-side{
+        display: none;
+    }
+
+    .disable{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        /* flex: none; */
+        width: 100%;
+    }
+
+    .right-side {
+        padding: 20px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+/* HOVER BUAT LOGIN */
+.login-btn:hover {
+    background-color: #5126a5;
+    border-color: white;
+}
+
+/* HOVER BUAT SIGN UP */
+.signup-btn:hover {
+    background-color: #5126a5;
+}
+
+/* HOVER BUAT LUPA PASWWORD */
+.forgot-password:hover {
+    color: #8657e3;
+}

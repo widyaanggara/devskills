@@ -1,0 +1,226 @@
+/* CSS BUAT LOGIN */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.left-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.right-side {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #7139dc;
+    color: #fff;
+    background-image: url('../assets/pattern1.svg');
+    background-size: cover;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.left-side p {
+    font-size: 1rem;
+    color: #656565;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.right-side p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0f3f4;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    color: #656565;
+}
+
+.login-dtl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-dtl .reg-btn a{
+    font-weight: 500;
+    color: #06080E;
+    text-decoration: none;
+}
+
+.login-dtl .reg-btn a:hover{
+    color: #5126a5;
+}
+
+.login-dtl .disable{
+    display: none;
+} 
+
+.forgot-password {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    color: #656565;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 45px;
+    background-color: #6231bf;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sign-up-btn {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 45px;
+    background: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width : 992px) {
+    .right-side{
+        display: none;
+    }
+
+    .login-dtl .disable{
+        display: block;
+    } 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        /* flex: none; */
+        width: 100%;
+    }
+
+    .right-side {
+        padding: 20px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width : 460px) {
+    .login-dtl {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+        gap: 0rem;
+    }
+    
+    .forgot-password {
+        display: block;
+        margin: 0 auto;
+        color: #656565;
+        text-decoration: none;
+        margin-bottom: 20px;
+        margin-top: -2rem;
+    }
+}
+
+/* HOVER BUAT LOGN */
+.login-btn:hover {
+    background-color: #5126a5;
+}
+
+/* HOVER BUAT SIGN UP */
+.sign-up-btn:hover {
+    background-color: #5b32ad; /* BUAT NGUBAH LATAR BELAKANG */
+    border-color: white; /* BUAT NGUBAH BORDER */
+    color: white; /* BUAT NGUBAH WARNA TEXT */
+}
+
+/* HOVER BUAT LUPA PASWWORD */
+.forgot-password:hover {
+    color: #8657e3;
+}
